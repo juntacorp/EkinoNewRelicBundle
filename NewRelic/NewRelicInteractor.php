@@ -124,4 +124,12 @@ class NewRelicInteractor implements NewRelicInteractorInterface
     {
         newrelic_start_transaction($name);
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function recordCustomEvent($name, array $attributes)
+    {
+        newrelic_record_custom_event($name, $attributes);
+    }
 }

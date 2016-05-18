@@ -119,4 +119,5 @@ class BlackholeInteractor implements NewRelicInteractorInterface
     public function recordCustomEvent($name, array $attributes)
     {
     }
+
 }
